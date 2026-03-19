@@ -37,6 +37,7 @@ A aplicação foi desenvolvida para extrair dados de um arquivo compactado, real
 ## 🛠️ Como Executar o Projeto
 
 A aplicação possui mecanismos de resiliência. Você pode iniciar pelo processamento de dados ou direto pela API, e o sistema garantirá que os arquivos necessários sejam extraídos.
+
 Opção 1: Executar o Pipeline de Dados Completo
 
 Para rodar a extração, tratamento, criação do banco de dados e visualizar o relatório de agrupamento no terminal, execute:
@@ -59,20 +60,18 @@ Para iniciar o servidor da API (que carrega os dados em memória para alta perfo
 
 ##📡 Endpoints da API
 Obter Tipo por ID
-
 Retorna o nome correspondente ao ID do tipo fornecido.
 
-    URL: /tipos/{tipo_id}
-
-    Método: GET
-
-    Parâmetros de Rota: tipo_id (Inteiro)
+   * URL: /tipos/{tipo_id}
+   * Método: GET
+   * Parâmetros de Rota: tipo_id (Inteiro)
 
 Exemplo de Requisição:
 
 `GET [http://127.0.0.1:8000/tipos/1](http://127.0.0.1:8000/tipos/1)`
 
 Exemplo de Resposta de Sucesso (200 OK):
+
 ```
 {
   "id": 1,
@@ -81,6 +80,7 @@ Exemplo de Resposta de Sucesso (200 OK):
 ```
 
 Exemplo de Resposta de Erro (404 Not Found):
+
 ```
 {
   "detail": "Tipo não encontrado no arquivo."
