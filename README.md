@@ -44,17 +44,12 @@ Para rodar a extração, tratamento, criação do banco de dados e visualizar o 
 
 O que este script faz:
 
-    Descompacta dados.zip.
-
-    Filtra registros com status "CRÍTICO" e ordena por data.
-
-    Faz o merge com o arquivo de tipos para obter a nomenclatura correta.
-
-    Gera um arquivo insert-dados.sql.
-
-    Cria e popula o banco de dados database.db.
-
-    Imprime um relatório analítico agrupando itens por dia e tipo.
+   * Descompacta dados.zip.
+   * Filtra registros com status "CRÍTICO" e ordena por data.
+   * Faz o merge com o arquivo de tipos para obter a nomenclatura correta.
+   *  Gera um arquivo insert-dados.sql.
+   *  Cria e popula o banco de dados database.db.
+   *  Imprime um relatório analítico agrupando itens por dia e tipo.
 
 Opção 2: Iniciar a API
 
@@ -74,6 +69,7 @@ Retorna o nome correspondente ao ID do tipo fornecido.
     Parâmetros de Rota: tipo_id (Inteiro)
 
 Exemplo de Requisição:
+
 `GET [http://127.0.0.1:8000/tipos/1](http://127.0.0.1:8000/tipos/1)`
 
 Exemplo de Resposta de Sucesso (200 OK):
