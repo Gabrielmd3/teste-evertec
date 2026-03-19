@@ -41,6 +41,7 @@ A aplicação possui mecanismos de resiliência. Você pode iniciar pelo process
 Opção 1: Executar o Pipeline de Dados Completo
 
 Para rodar a extração, tratamento, criação do banco de dados e visualizar o relatório de agrupamento no terminal, execute:
+
 `python main.py`
 
 O que este script faz:
@@ -55,7 +56,9 @@ O que este script faz:
 Opção 2: Iniciar a API
 
 Para iniciar o servidor da API (que carrega os dados em memória para alta performance), execute:
+
 `python -m uvicorn api:app --reload`
+
 (O servidor iniciará, por padrão, em http://127.0.0.1:8000)
 
 ##📡 Endpoints da API
