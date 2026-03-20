@@ -71,7 +71,7 @@ Retorna o nome correspondente ao ID do tipo fornecido.
 
 Exemplo de Requisição:
 
-`GET [http://127.0.0.1:8000/tipos/1](http://127.0.0.1:8000/tipos/1)`
+`GET [http://127.0.0.1:8000/tipos/1]`
 
 Exemplo de Resposta de Sucesso (200 OK):
 
